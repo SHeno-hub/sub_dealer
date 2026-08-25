@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login - Sub-Dealer Portal</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
     <style>
         * {
             box-sizing: border-box;
