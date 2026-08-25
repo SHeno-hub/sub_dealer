@@ -22,7 +22,6 @@
             align-items: center;
         }
 
-        /* الدوائر الزرقاء الزخرفية */
         .circle {
             position: absolute;
             border-radius: 50%;
@@ -35,6 +34,7 @@
             background: linear-gradient(135deg, #4facfe, #1a73c7);
             top: -80px;
             right: 15%;
+            animation: float1 6s ease-in-out infinite;
         }
 
         .circle-2 {
@@ -43,6 +43,7 @@
             background: linear-gradient(135deg, #a8d0f0, #4a90d9);
             bottom: -150px;
             left: 25%;
+            animation: float2 7s ease-in-out infinite;
         }
 
         .dot {
@@ -57,6 +58,7 @@
             height: 16px;
             top: 45%;
             right: 27%;
+            animation: float3 5s ease-in-out infinite;
         }
 
         .dot-2 {
@@ -64,9 +66,29 @@
             height: 20px;
             top: 60%;
             left: 25%;
+            animation: float4 5.5s ease-in-out infinite;
         }
 
-        /* كارت اللوجن */
+        @keyframes float1 {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-15px, 20px); }
+        }
+
+        @keyframes float2 {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(15px, -20px); }
+        }
+
+        @keyframes float3 {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-10px, 10px); }
+        }
+
+        @keyframes float4 {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(10px, -10px); }
+        }
+
         .login-card {
             position: relative;
             z-index: 1;
