@@ -8,6 +8,11 @@ use App\Http\Controllers\NewVehiclesRequestController;
 use App\Http\Controllers\ManagePartsRequestController;
 use App\Http\Controllers\ManageVehiclesRequestController;
 
+Route::get('/', function () {
+    return redirect()->route('login');
+});
+
+
 Route::get('/sub-dealer/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/sub-dealer/login', [LoginController::class, 'login'])->name('login.submit');
 Route::post('/sub-dealer/logout', [LoginController::class, 'logout'])->name('logout');
